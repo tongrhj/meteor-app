@@ -1,0 +1,16 @@
+<template name="userList">
+  {{#each users}}
+    <div style="padding-bottom:15px;">
+      Username: {{ name }}
+      <br>
+      Score:
+      {{ #if score }}
+        {{ score }}
+        {{ else }}
+          0
+      {{/if}}
+      <br>
+      <button>+</button>
+    </div>
+  {{/each}}
+</template>
